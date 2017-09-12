@@ -38,7 +38,7 @@ if __name__ == '__main__':
         flags = connectivity
         if fixed_range:
             flags |= cv2.FLOODFILL_FIXED_RANGE
-        cv2.floodFill(flooded, mask, seed_pt, (255, 255, 255), (lo,)*3, (hi,)*3, flags)
+        cv2.floodFill(flooded, mask, seed_pt, (255, 255, 0), (lo,)*3, (hi,)*3, flags)
         cv2.circle(flooded, seed_pt, 6, (0, 0, 255), -1)
         cv2.imshow('floodfill', flooded)
 
