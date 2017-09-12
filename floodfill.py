@@ -50,8 +50,8 @@ if __name__ == '__main__':
 
     update()
     cv2.setMouseCallback('floodfill', onmouse)
-    cv2.createTrackbar('lo', 'floodfill', 20, 255, update)
-    cv2.createTrackbar('hi', 'floodfill', 20, 255, update)
+    cv2.createTrackbar('lo', 'floodfill', 0, 255, update)
+    cv2.createTrackbar('hi', 'floodfill', 0, 255, update)
 
     while True:
         ch = cv2.waitKey()
