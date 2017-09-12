@@ -22,7 +22,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     h, w = img.shape[:2]
-    mask = np.zeros((h+2, w+2), np.uint8)
+    mask = np.zeros((h+5, w+5), np.uint8)
     seed_pt = None
     fixed_range = True
     connectivity = 4
