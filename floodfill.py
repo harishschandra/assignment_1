@@ -13,7 +13,7 @@ if __name__ == '__main__':
     try:
         fn = sys.argv[1]
     except:
-        fn = '/home/ec602/fruit.jpg'
+        fn = 'cat.jpg/'
     print(__doc__)
 
     img = cv2.imread(fn, True)
