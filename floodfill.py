@@ -21,6 +21,11 @@ if __name__ == '__main__':
     if img is None:
         print('Failed to load image file:', fn)
         sys.exit(1)
+    import os
+    b = os.path.getsize("fruits1.png")
+    print(b)
+    if b > 1000000:
+        print('Image is too large',fn)
 
     h, w = img.shape[:2]
     mask = np.zeros((h+2, w+2), np.uint8)
