@@ -7,6 +7,7 @@ from __future__ import print_function
 
 import numpy as np
 import cv2
+import os
 
 if __name__ == '__main__':
     import sys
@@ -20,6 +21,10 @@ if __name__ == '__main__':
     if img is None:
         print('Failed to load image file:', fn)
         sys.exit(1)
+        
+    import os
+    b = os.path.getsize("cat.jpg/")
+    print(b)
 
     h, w = img.shape[:2]
     mask = np.zeros((h+2, w+2), np.uint8)
