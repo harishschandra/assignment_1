@@ -21,6 +21,10 @@ if __name__ == '__main__':
     if img is None:
         print('Failed to load image file:', fn)
         sys.exit(1)
+        
+    import os
+    b = os.path.getsize("cat.jpg/")
+    print(b)
 
     h, w = img.shape[:2]
     mask = np.zeros((h+2, w+2), np.uint8)
