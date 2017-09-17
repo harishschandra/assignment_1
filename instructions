@@ -1,0 +1,2 @@
+We use linux operating system in virtual box to run this program. To run this program, we need cv2 module, which can be
+downloaded by command 'pip install opencv-python' in command line.
